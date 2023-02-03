@@ -1,0 +1,446 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{88D46F82-83F9-48AC-B0F1-499095156379}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VoTanDat_TraCuuHoSo</RootNamespace>
+    <AssemblyName>VoTanDat_TraCuuHoSo</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44303</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin.aspx" />
+    <Content Include="Ad_them.aspx" />
+    <Content Include="anh\lg.png" />
+    <Content Include="anh\meo.jpg" />
+    <Content Include="css\Style.css" />
+    <Content Include="dist\css\Style.css" />
+    <Content Include="dist\css\theme.css" />
+    <Content Include="dist\css\theme.min.css" />
+    <Content Include="dist\img\brand-white.svg" />
+    <Content Include="dist\img\brand.svg" />
+    <Content Include="dist\img\down-arrow.svg" />
+    <Content Include="dist\js\theme.js" />
+    <Content Include="dist\js\theme.min.js" />
+    <Content Include="img\auth\login-bg.jpg" />
+    <Content Include="img\auth\register-bg.jpg" />
+    <Content Include="img\big\img1.jpg" />
+    <Content Include="img\big\img2.jpg" />
+    <Content Include="img\big\img3.jpg" />
+    <Content Include="img\big\img4.jpg" />
+    <Content Include="img\big\img5.jpg" />
+    <Content Include="img\big\img6.jpg" />
+    <Content Include="img\credit\american-express.png" />
+    <Content Include="img\credit\mastercard.png" />
+    <Content Include="img\credit\paypal2.png" />
+    <Content Include="img\credit\visa.png" />
+    <Content Include="img\navbar\blue.jpg" />
+    <Content Include="img\navbar\dark.jpg" />
+    <Content Include="img\navbar\green.jpg" />
+    <Content Include="img\navbar\light.jpg" />
+    <Content Include="img\navbar\orange.jpg" />
+    <Content Include="img\navbar\purple.jpg" />
+    <Content Include="img\navbar\red.jpg" />
+    <Content Include="img\placeholder\placeimg_400_200_nature.jpg" />
+    <Content Include="img\portfolio-1.jpg" />
+    <Content Include="img\portfolio-10.jpg" />
+    <Content Include="img\portfolio-11.jpg" />
+    <Content Include="img\portfolio-12.jpg" />
+    <Content Include="img\portfolio-2.jpg" />
+    <Content Include="img\portfolio-3.jpg" />
+    <Content Include="img\portfolio-4.jpg" />
+    <Content Include="img\portfolio-5.jpg" />
+    <Content Include="img\portfolio-6.jpg" />
+    <Content Include="img\portfolio-7.jpg" />
+    <Content Include="img\portfolio-8.jpg" />
+    <Content Include="img\portfolio-9.jpg" />
+    <Content Include="img\user.jpg" />
+    <Content Include="img\user1.jpg" />
+    <Content Include="img\user2.jpg" />
+    <Content Include="img\user3.jpg" />
+    <Content Include="img\users\1.jpg" />
+    <Content Include="img\users\2.jpg" />
+    <Content Include="img\users\3.jpg" />
+    <Content Include="img\users\4.jpg" />
+    <Content Include="img\users\5.jpg" />
+    <Content Include="img\widget\p1.jpg" />
+    <Content Include="img\widget\p2.jpg" />
+    <Content Include="img\widget\p3.jpg" />
+    <Content Include="img\widget\p4.jpg" />
+    <Content Include="js\alerts.js" />
+    <Content Include="js\calendar.js" />
+    <Content Include="js\carousel.js" />
+    <Content Include="js\chart-amcharts.js" />
+    <Content Include="js\chart-chartist.js" />
+    <Content Include="js\chart-flot.js" />
+    <Content Include="js\chart-knob.js" />
+    <Content Include="js\charts.js" />
+    <Content Include="js\datatables.js" />
+    <Content Include="js\form-advanced.js" />
+    <Content Include="js\form-components.js" />
+    <Content Include="js\form-picker.js" />
+    <Content Include="js\forms.js" />
+    <Content Include="js\layouts.js" />
+    <Content Include="js\range-slider.js" />
+    <Content Include="js\rating.js" />
+    <Content Include="js\session-time-out.js" />
+    <Content Include="js\tables.js" />
+    <Content Include="js\taskboard.js" />
+    <Content Include="js\widget-chart.js" />
+    <Content Include="js\widget-data.js" />
+    <Content Include="js\widget-statistic.js" />
+    <Content Include="js\widgets.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="Manage.aspx" />
+    <Content Include="pages\calendar.html" />
+    <Content Include="pages\charts-amcharts.html" />
+    <Content Include="pages\charts-chartist.html" />
+    <Content Include="pages\charts-flot.html" />
+    <Content Include="pages\charts-knob.html" />
+    <Content Include="pages\forgot-password.html" />
+    <Content Include="pages\form-addon.html" />
+    <Content Include="pages\form-advance.html" />
+    <Content Include="pages\form-components.html" />
+    <Content Include="pages\form-picker.html" />
+    <Content Include="pages\invoice.html" />
+    <Content Include="pages\layout-edit-item.html" />
+    <Content Include="pages\layouts.html" />
+    <Content Include="pages\login.html" />
+    <Content Include="pages\navbar.html" />
+    <Content Include="pages\profile.html" />
+    <Content Include="pages\register.html" />
+    <Content Include="pages\table-bootstrap.html" />
+    <Content Include="pages\table-datatable.html" />
+    <Content Include="pages\taskboard.html" />
+    <Content Include="pages\ui\alerts.html" />
+    <Content Include="pages\ui\badges.html" />
+    <Content Include="pages\ui\buttons.html" />
+    <Content Include="pages\ui\cards.html" />
+    <Content Include="pages\ui\carousel.html" />
+    <Content Include="pages\ui\icons.html" />
+    <Content Include="pages\ui\modals.html" />
+    <Content Include="pages\ui\navigation.html" />
+    <Content Include="pages\ui\notifications.html" />
+    <Content Include="pages\ui\range-slider.html" />
+    <Content Include="pages\ui\rating.html" />
+    <Content Include="pages\ui\session-timeout.html" />
+    <Content Include="pages\widget-chart.html" />
+    <Content Include="pages\widget-data.html" />
+    <Content Include="pages\widget-statistic.html" />
+    <Content Include="pages\widgets.html" />
+    <Content Include="plugins\amcharts\amcharts.js" />
+    <Content Include="plugins\amcharts\animate.min.js" />
+    <Content Include="plugins\amcharts\funnel.js" />
+    <Content Include="plugins\amcharts\gantt.js" />
+    <Content Include="plugins\amcharts\gauge.js" />
+    <Content Include="plugins\amcharts\images\dragIconRoundBig.png" />
+    <Content Include="plugins\amcharts\images\dragIconRoundBig.svg" />
+    <Content Include="plugins\amcharts\images\lens.png" />
+    <Content Include="plugins\amcharts\images\lens.svg" />
+    <Content Include="plugins\amcharts\pie.js" />
+    <Content Include="plugins\amcharts\radar.js" />
+    <Content Include="plugins\amcharts\serial.js" />
+    <Content Include="plugins\amcharts\themes\black.js" />
+    <Content Include="plugins\amcharts\themes\chalk.js" />
+    <Content Include="plugins\amcharts\themes\dark.js" />
+    <Content Include="plugins\amcharts\themes\light.js" />
+    <Content Include="plugins\amcharts\themes\patterns.js" />
+    <Content Include="plugins\amcharts\xy.js" />
+    <Content Include="plugins\ammap3\ammap\ammap.css" />
+    <Content Include="plugins\ammap3\ammap\ammap.js" />
+    <Content Include="plugins\ammap3\ammap\ammap_amcharts_extension.js" />
+    <Content Include="plugins\ammap3\ammap\maps\js\usaLow.js" />
+    <Content Include="plugins\bootstrap-slider\dist\bootstrap-slider.min.js" />
+    <Content Include="plugins\bootstrap-slider\dist\css\bootstrap-slider.min.css" />
+    <Content Include="plugins\bootstrap-tagsinput\dist\bootstrap-tagsinput.css" />
+    <Content Include="plugins\bootstrap-tagsinput\dist\bootstrap-tagsinput.min.js" />
+    <Content Include="plugins\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Include="plugins\bootstrap\dist\js\bootstrap.min.js" />
+    <Content Include="plugins\c3\c3.min.css" />
+    <Content Include="plugins\c3\c3.min.js" />
+    <Content Include="plugins\chartist\dist\chartist.min.css" />
+    <Content Include="plugins\chartist\dist\chartist.min.js" />
+    <Content Include="plugins\d3\dist\d3.js" />
+    <Content Include="plugins\d3\dist\d3.min.js" />
+    <Content Include="plugins\d3\dist\d3.node.js" />
+    <Content Include="plugins\d3\dist\package.js" />
+    <Content Include="plugins\datatables.net-bs4\css\dataTables.bootstrap4.min.css" />
+    <Content Include="plugins\datatables.net-bs4\js\dataTables.bootstrap4.min.js" />
+    <Content Include="plugins\datatables.net-responsive-bs4\css\responsive.bootstrap4.min.css" />
+    <Content Include="plugins\datatables.net-responsive-bs4\js\responsive.bootstrap4.min.js" />
+    <Content Include="plugins\datatables.net-responsive\js\dataTables.responsive.min.js" />
+    <Content Include="plugins\datatables.net\js\jquery.dataTables.min.js" />
+    <Content Include="plugins\datedropper\datedropper.min.css" />
+    <Content Include="plugins\datedropper\datedropper.min.js" />
+    <Content Include="plugins\flot-charts\curvedLines.js" />
+    <Content Include="plugins\flot-charts\jquery.flot.categories.js" />
+    <Content Include="plugins\flot-charts\jquery.flot.js" />
+    <Content Include="plugins\flot-charts\jquery.flot.pie.js" />
+    <Content Include="plugins\flot-charts\jquery.flot.tooltip.min.js" />
+    <Content Include="plugins\fontawesome-free\css\all.min.css" />
+    <Content Include="plugins\fontawesome-free\webfonts\fa-brands-400.svg" />
+    <Content Include="plugins\fontawesome-free\webfonts\fa-regular-400.svg" />
+    <Content Include="plugins\fontawesome-free\webfonts\fa-solid-900.svg" />
+    <Content Include="plugins\fullcalendar\dist\fullcalendar.min.css" />
+    <Content Include="plugins\fullcalendar\dist\fullcalendar.min.js" />
+    <Content Include="plugins\icon-kit\dist\css\iconkit.min.css" />
+    <Content Include="plugins\icon-kit\dist\fonts\iconkit.svg" />
+    <Content Include="plugins\ionicons\dist\css\ionicons.min.css" />
+    <Content Include="plugins\ionicons\dist\fonts\ionicons.svg" />
+    <Content Include="plugins\jquery-bar-rating\dist\jquery.barrating.min.js" />
+    <Content Include="plugins\jquery-bar-rating\dist\themes\bars-1to10.css" />
+    <Content Include="plugins\jquery-bar-rating\dist\themes\bars-horizontal.css" />
+    <Content Include="plugins\jquery-bar-rating\dist\themes\bars-movie.css" />
+    <Content Include="plugins\jquery-bar-rating\dist\themes\bars-pill.css" />
+    <Content Include="plugins\jquery-bar-rating\dist\themes\bars-reversed.css" />
+    <Content Include="plugins\jquery-bar-rating\dist\themes\bars-square.css" />
+    <Content Include="plugins\jquery-bar-rating\dist\themes\bootstrap-stars.css" />
+    <Content Include="plugins\jquery-bar-rating\dist\themes\css-stars.css" />
+    <Content Include="plugins\jquery-bar-rating\dist\themes\fontawesome-stars-o.css" />
+    <Content Include="plugins\jquery-bar-rating\dist\themes\fontawesome-stars.css" />
+    <Content Include="plugins\jquery-knob\dist\jquery.knob.min.js" />
+    <Content Include="plugins\jquery-minicolors\jquery.minicolors.css" />
+    <Content Include="plugins\jquery-minicolors\jquery.minicolors.min.js" />
+    <Content Include="plugins\jquery-minicolors\jquery.minicolors.png" />
+    <Content Include="plugins\jquery-toast-plugin\dist\jquery.toast.min.css" />
+    <Content Include="plugins\jquery-toast-plugin\dist\jquery.toast.min.js" />
+    <Content Include="plugins\jquery.repeater\jquery.repeater.min.js" />
+    <Content Include="plugins\jvectormap\jquery-jvectormap.css" />
+    <Content Include="plugins\jvectormap\jquery-jvectormap.min.js" />
+    <Content Include="plugins\mohithg-switchery\dist\switchery.min.css" />
+    <Content Include="plugins\mohithg-switchery\dist\switchery.min.js" />
+    <Content Include="plugins\moment\moment.js" />
+    <Content Include="plugins\nestable\jquery.nestable.js" />
+    <Content Include="plugins\owl.carousel\dist\assets\ajax-loader.gif" />
+    <Content Include="plugins\owl.carousel\dist\assets\owl.carousel.min.css" />
+    <Content Include="plugins\owl.carousel\dist\assets\owl.theme.default.min.css" />
+    <Content Include="plugins\owl.carousel\dist\assets\owl.video.play.png" />
+    <Content Include="plugins\owl.carousel\dist\owl.carousel.min.js" />
+    <Content Include="plugins\perfect-scrollbar\css\perfect-scrollbar.css" />
+    <Content Include="plugins\perfect-scrollbar\dist\perfect-scrollbar.min.js" />
+    <Content Include="plugins\popper.js\dist\umd\popper.min.js" />
+    <Content Include="plugins\screenfull\dist\screenfull.js" />
+    <Content Include="plugins\select2\dist\css\select2.min.css" />
+    <Content Include="plugins\select2\dist\js\select2.min.js" />
+    <Content Include="plugins\summernote\dist\summernote-bs4.css" />
+    <Content Include="plugins\summernote\dist\summernote-bs4.min.js" />
+    <Content Include="plugins\sweetalert\dist\sweetalert.min.js" />
+    <Content Include="plugins\tempusdominus-bootstrap-4\build\css\tempusdominus-bootstrap-4.min.css" />
+    <Content Include="plugins\tempusdominus-bootstrap-4\build\js\tempusdominus-bootstrap-4.min.js" />
+    <Content Include="plugins\weather-icons\css\weather-icons.min.css" />
+    <Content Include="plugins\weather-icons\font\weathericons-regular-webfont.svg" />
+    <Content Include="src\img\brand-white.svg" />
+    <Content Include="src\img\brand.svg" />
+    <Content Include="src\img\down-arrow.svg" />
+    <Content Include="src\img\logo.svg" />
+    <Content Include="src\js\theme.js" />
+    <Content Include="src\js\theme.min.js" />
+    <Content Include="src\js\vendor\jquery-3.3.1.min.js" />
+    <Content Include="src\js\vendor\jquery-3.3.1.slim.min.js" />
+    <Content Include="src\js\vendor\modernizr-2.8.3.min.js" />
+    <Content Include="User.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ad_them.aspx.cs">
+      <DependentUpon>Ad_them.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ad_them.aspx.designer.cs">
+      <DependentUpon>Ad_them.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User.aspx.cs">
+      <DependentUpon>User.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User.aspx.designer.cs">
+      <DependentUpon>User.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dist\css\theme.css.map" />
+    <Content Include="dist\css\theme.min.css.map" />
+    <Content Include="dist\img\.gitignore" />
+    <None Include="packages.config" />
+    <Content Include="plugins\bootstrap-tagsinput\dist\bootstrap-tagsinput.min.js.map" />
+    <Content Include="plugins\bootstrap\dist\css\bootstrap.min.css.map" />
+    <Content Include="plugins\bootstrap\dist\js\bootstrap.min.js.map" />
+    <Content Include="plugins\chartist\dist\chartist.min.js.map" />
+    <Content Include="plugins\fontawesome-free\webfonts\fa-brands-400.eot" />
+    <Content Include="plugins\fontawesome-free\webfonts\fa-brands-400.ttf" />
+    <Content Include="plugins\fontawesome-free\webfonts\fa-brands-400.woff" />
+    <Content Include="plugins\fontawesome-free\webfonts\fa-brands-400.woff2" />
+    <Content Include="plugins\fontawesome-free\webfonts\fa-regular-400.eot" />
+    <Content Include="plugins\fontawesome-free\webfonts\fa-regular-400.ttf" />
+    <Content Include="plugins\fontawesome-free\webfonts\fa-regular-400.woff" />
+    <Content Include="plugins\fontawesome-free\webfonts\fa-regular-400.woff2" />
+    <Content Include="plugins\fontawesome-free\webfonts\fa-solid-900.eot" />
+    <Content Include="plugins\fontawesome-free\webfonts\fa-solid-900.ttf" />
+    <Content Include="plugins\fontawesome-free\webfonts\fa-solid-900.woff" />
+    <Content Include="plugins\fontawesome-free\webfonts\fa-solid-900.woff2" />
+    <Content Include="plugins\icon-kit\dist\fonts\iconkit.eot" />
+    <Content Include="plugins\icon-kit\dist\fonts\iconkit.otf" />
+    <Content Include="plugins\icon-kit\dist\fonts\iconkit.ttf" />
+    <Content Include="plugins\icon-kit\dist\fonts\iconkit.woff" />
+    <Content Include="plugins\icon-kit\dist\fonts\iconkit.woff2" />
+    <Content Include="plugins\ionicons\dist\fonts\ionicons.eot" />
+    <Content Include="plugins\ionicons\dist\fonts\ionicons.ttf" />
+    <Content Include="plugins\ionicons\dist\fonts\ionicons.woff" />
+    <Content Include="plugins\ionicons\dist\fonts\ionicons.woff2" />
+    <Content Include="plugins\jquery-bar-rating\dist\jquery.barrating.min.js.map" />
+    <Content Include="plugins\popper.js\dist\umd\popper.min.js.map" />
+    <Content Include="plugins\summernote\.editorconfig" />
+    <Content Include="plugins\summernote\.eslintrc" />
+    <Content Include="plugins\summernote\dist\font\summernote.eot" />
+    <Content Include="plugins\summernote\dist\font\summernote.ttf" />
+    <Content Include="plugins\summernote\dist\font\summernote.woff" />
+    <Content Include="plugins\weather-icons\font\weathericons-regular-webfont.eot" />
+    <Content Include="plugins\weather-icons\font\weathericons-regular-webfont.ttf" />
+    <Content Include="plugins\weather-icons\font\weathericons-regular-webfont.woff" />
+    <Content Include="plugins\weather-icons\font\WeatherIcons-Regular.otf" />
+    <Content Include="src\img\.gitignore" />
+    <Content Include="src\scss\theme.scss" />
+    <Content Include="src\scss\_alert.scss" />
+    <Content Include="src\scss\_auth.scss" />
+    <Content Include="src\scss\_badges.scss" />
+    <Content Include="src\scss\_buttons.scss" />
+    <Content Include="src\scss\_calendar.scss" />
+    <Content Include="src\scss\_cards.scss" />
+    <Content Include="src\scss\_carousel.scss" />
+    <Content Include="src\scss\_forms.scss" />
+    <Content Include="src\scss\_layout.scss" />
+    <Content Include="src\scss\_main.scss" />
+    <Content Include="src\scss\_mixins.scss" />
+    <Content Include="src\scss\_modal.scss" />
+    <Content Include="src\scss\_navigation.scss" />
+    <Content Include="src\scss\_range-slider.scss" />
+    <Content Include="src\scss\_rating.scss" />
+    <Content Include="src\scss\_settings.scss" />
+    <Content Include="src\scss\_tables.scss" />
+    <Content Include="src\scss\_widgets.scss" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50513</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44303/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
